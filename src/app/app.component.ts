@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-project';
+  name = 'Jurgend'
+  message = "Hello World!";
+  dateNumber = 1696582493000;
 }

@@ -1,0 +1,40 @@
+*{
+    background-color: #676767;
+    color: #ff9900;
+}
+
+h2{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.response-data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.response-list {
+  list-style: none;
+  padding: 0;
+}
+
+.response-item {
+  min-width: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.answer {
+  max-width: 400px;
+  font-size: 18px;
+  padding:10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.horizontal-line{
+  border: 1px solid #444;
+  width: 100%;
+}
+  

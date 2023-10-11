@@ -1,0 +1,16 @@
+<div class="reviews-container">
+    <h2>Product Reviews</h2>
+    <div class="reviews-data">
+        <ul class="reviews-list">
+            <li *ngFor="let review of reviews; let last=last" class="review-item">
+            <div class="review-header">
+                <h3>{{ review.name }}</h3>
+                <span class="review-score">{{ review.score }}/5</span>
+            </div>
+                <p class="review-text">{{ review.review }}</p>
+                <div class="horizontal-line" *ngIf="!last"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+  

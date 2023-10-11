@@ -1,0 +1,68 @@
+.artist-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #676767;
+  }
+  
+  .artist-image {
+    padding: 50px;
+  }
+  
+  .artist-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .artist-details {
+    flex: 2;
+    padding: 20px;
+    color: #ff9900;
+  }
+  
+  .artist-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .artist-birthdate,
+  .artist-birthplace {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .artist-description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .artist-famous-works {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 200px) {
+    .artist-bio {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .artist-image {
+      padding: 0;
+    }
+  
+    .artist-details {
+      padding: 0;
+    }
+  
+    .artist-image img {
+      margin-bottom: 20px;
+    }
+  }
+  

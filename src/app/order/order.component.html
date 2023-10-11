@@ -1,0 +1,17 @@
+<div class="orders-container">
+    <h2>Order requests</h2>
+    <div class="orders-data">
+        <ul class="orders-list">
+            <li *ngFor="let order of orders; let last = last" class="order-item">
+                <div class="order-header">
+                    <h3>Email: <i>{{ order.email }}</i></h3>
+                </div>
+                <div class="order-message">
+                    <p>“{{ order.message }}”</p>
+                </div>
+                <div class="horizontal-line" *ngIf="!last"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+  

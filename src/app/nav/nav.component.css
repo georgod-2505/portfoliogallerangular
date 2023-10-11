@@ -1,0 +1,31 @@
+/*  Navbar Styles */
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: #444; 
+    padding: 0.5rem;
+    border-bottom: 2px solid #ff9900; 
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .liRef {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  .reffka {
+    text-decoration: none;
+    color: #ff9900;
+    font-family: 'Courier New', monospace; 
+    font-size: 1.2rem; 
+    transition: color 0.3s; 
+    position: relative;
+  }
+  
+  .reffka:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+
+  

@@ -1,0 +1,22 @@
+<!-- <p>gallery works!</p> -->
+<section class="flow">
+  <div class="arts">
+    <ul class="auto-grid" role="list">
+      <li *ngFor="let postImage of arts">
+        <div class="art" (click)="selectImage(postImage)">
+          <h2 class="profile__name">{{postImage.name}}</h2>
+          <p>{{postImage.year}}</p>
+            <img alt="Art: Blue Rider" [src]="postImage? postImage.path : '/assets/profile.svg'" />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="image-details" *ngIf="selectedImage">
+  <h2>Image Details</h2>
+  <div class="image">
+    <img [src]="selectedImage.path" alt="Art: {{ selectedImage.name }}" />
+  </div>
+  <h3>Name: {{ selectedImage.name }}</h3>
+  <p>Year: {{ selectedImage.year }}</p>
+</section>
